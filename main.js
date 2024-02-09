@@ -5,8 +5,10 @@ const board = new Array(100).fill(0)
 
 let Numeroaleatoriohasta50 = Math.floor(Math.random() * 50)
 
-const divNumeroaleatoriohasta50 = document.getElementById('Numeroaleatoriohasta50');
+let reset = 0
 
+const divNumeroaleatoriohasta50 = document.getElementById('Numeroaleatoriohasta50');
+const divreset = document.getElementById('EliminarNumero');
 
 // Generar cuando se aprieta botton 'Generate'
 function GenerarNumero() {
@@ -16,18 +18,11 @@ function GenerarNumero() {
     divNumeroaleatoriohasta50.innerText = 'Numeros:' + Numeroaleatoriohasta50;
     
 }
-
-
-
-
-
-
 // Generar cuando se aprieta botton 'Reset'
 function Reset() {
-    for (let i = 0; i < 100; i++) {
-        board[i] = 0
-    }
-    console.log(board)
+    reset = 0;
+    console.log(reset);
+    divNumeroaleatoriohasta50.innerText = 'Numeros: ' + reset;
 }
 
 // const maximo = 5 Nunca cambbia
