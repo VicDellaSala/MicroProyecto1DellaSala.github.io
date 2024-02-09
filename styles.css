@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: lightslategray;
+}
+
+.BingoGeneral {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+  gap: 16px;
+  min-height: 100vh;
+}
+
+.header__title {
+  margin: 0;
+  font-size: 48px;
+  font-weight: bold;
+}
