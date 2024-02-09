@@ -2,14 +2,25 @@
 // Empieza en 0
 const board = new Array(100).fill(0)
 
-numeroaleatorio = Math.floor(Math.random() * 100)
+
+let Numeroaleatoriohasta50 = Math.floor(Math.random() * 50)
+
+const divNumeroaleatoriohasta50 = document.getElementById('Numeroaleatoriohasta50');
+
 
 // Generar cuando se aprieta botton 'Generate'
 function GenerarNumero() {
-    numeroaleatorio = Math.floor(Math.random() * 100)
-    console.log(numeroaleatorio)
-    alert('El numero es ' + numeroaleatorio)
+    Numeroaleatoriohasta50 = Math.floor(Math.random() * 50);
+    Numeroaleatoriohasta50;
+    console.log(Numeroaleatoriohasta50);
+    divNumeroaleatoriohasta50.innerText = 'Numeros:' + Numeroaleatoriohasta50;
+    
 }
+
+
+
+
+
 
 // Generar cuando se aprieta botton 'Reset'
 function Reset() {
