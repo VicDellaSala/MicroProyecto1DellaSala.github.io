@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: lightslategray;
+  background-color: rgb(248, 153, 220);
 }
 
 .contenedores {
@@ -11,6 +11,14 @@ body {
   align-items: center;
   gap: 16px;
   min-height: 100vh;
+}
+
+.Generar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
 }
 
 .header {

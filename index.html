@@ -9,27 +9,39 @@
   <body>
     <div class="contenedores">
       <h1>Bingo</h1>
-      <p>Seleccione generar para sacar un numero, Reset para reiniciar</p>
-      <div class="bingo">
-        <div class="bingo__header">
-          <button onclick="GenerarNumero()">Generate</button>
-          <button onclick="Reset()">Reset</button>
-          <div id="Numeroaleatoriohasta50">Numeros: 0</div>
-          <div id="EliminarNumero"></div>
+      <div class="instrucciones">
+        <h2>Instrucciones</h2>
+        <p>
+          El juego consiste en ir sacando numeros aleatorios del 1 al 50, estos
+          numeros se iran mostrando en la pantalla y se iran marcando en el
+          tablero, el juego tiene 25 turnos, el carton lleno da 5 puntos, linea
+          horizontal 1 punto, vertical 1 punto, diagonal 3 puntos.
+        </p>
+        <h2>Introducir Jugadores</h2>
+        <p>Introducir los 4 Jugadores</p>
+        <div class="jugadores">
+          <input type="text" id="jugador1" placeholder="Jugador 1" />
+          <input type="text" id="jugador2" placeholder="Jugador 2" />
+          <input type="text" id="jugador3" placeholder="Jugador 3" />
+          <input type="text" id="jugador4" placeholder="Jugador 4" />
+          <button onclick="GuardarJugadores()">Guardar Jugadores</button>
+        </div>
+        <h2>Generador de numeros</h2>
+        <p>
+          Seleccione "Generate" para sacar un numero, "Reset" para reiniciar
+        </p>
+        <div class="bingo">
+          <div class="bingo__header">
+            <button onclick="GenerarNumero()">Generate</button>
+            <button onclick="Reset()">Reset</button>
+            <div id="Numeroaleatoriohasta50">Numeros: 0</div>
+            <div id="EliminarNumero"></div>
+          </div>
         </div>
         <div class="bingo__numbers" id="numbers"></div>
         <div class="num_generados" id="num_generados"></div>
         <div class="bingo__board" id="board"></div>
       </div>
-    </div>
-    <div class="instrucciones">
-      <h2>Instrucciones</h2>
-      <p>
-        El juego consiste en ir sacando numeros aleatorios del 1 al 75, estos
-        numeros se iran mostrando en la pantalla y se iran marcando en el
-        tablero, el juego termina cuando se marquen todos los numeros del
-        tablero.
-      </p>
     </div>
     <script src="./main.js"></script>
     <script src="./bingo.js"></script>

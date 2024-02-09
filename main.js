@@ -25,5 +25,12 @@ function Reset() {
     divNumeroaleatoriohasta50.innerText = 'Numeros: ' + reset;
 }
 
+function GuardarJugadores(){
+    
+}
+
+
+
+
 // const maximo = 5 Nunca cambbia
 // let contador = 0 Cambia
