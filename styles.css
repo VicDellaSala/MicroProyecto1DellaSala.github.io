@@ -4,13 +4,21 @@ body {
   background-color: lightslategray;
 }
 
-.BingoGeneral {
+.contenedores {
   display: flex;
   flex-direction: column;
   justify-content: top;
   align-items: center;
   gap: 16px;
   min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
 }
 
 .header__title {
@@ -50,4 +58,12 @@ body {
   margin-top: auto;
   font-size: 24px;
   font-weight: bold;
+}
+
+.instrucciones {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
 }

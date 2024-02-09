@@ -7,18 +7,30 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class="BingoGeneral">
+    <div class="contenedores">
       <h1>Bingo</h1>
+      <p>Seleccione generar para sacar un numero, Reset para reiniciar</p>
       <div class="bingo">
         <div class="bingo__header">
-          <button class="bingo__button" id="generate">Generate</button>
-          <button class="bingo__button" id="reset">Reset</button>
+          <button onclick="GenerarNumero()">Generate</button>
+          <button onclick="Reset()">Reset</button>
         </div>
         <div class="bingo__numbers" id="numbers"></div>
         <div class="num_generados" id="num_generados"></div>
         <div class="bingo__board" id="board"></div>
       </div>
     </div>
+    <div class="instrucciones">
+      <h2>Instrucciones</h2>
+      <p>
+        El juego consiste en ir sacando numeros aleatorios del 1 al 75, estos
+        numeros se iran mostrando en la pantalla y se iran marcando en el
+        tablero, el juego termina cuando se marquen todos los numeros del
+        tablero.
+      </p>
+    </div>
+    <script src="./main.js"></script>
+    <script src="./bingo.js"></script>
     <script src="./app.js"></script>
   </body>
 </html>

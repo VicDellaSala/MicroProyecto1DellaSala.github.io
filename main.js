@@ -1,15 +1,14 @@
-// Description: Main file for the game
 
 // Empieza en 0
 const board = new Array(100).fill(0)
 
+numeroaleatorio = Math.floor(Math.random() * 100)
+
 // Generar cuando se aprieta botton 'Generate'
-function Generate() {
-    for (let i = 0; i < 10; i++) {
-        let ran = Math.floor(Math.random() * 100)
-        board[ran] = 1
-    }
-    console.log(board)
+function GenerarNumero() {
+    numeroaleatorio = Math.floor(Math.random() * 100)
+    console.log(numeroaleatorio)
+    alert('El numero es ' + numeroaleatorio)
 }
 
 // Generar cuando se aprieta botton 'Reset'
@@ -20,3 +19,5 @@ function Reset() {
     console.log(board)
 }
 
+// const maximo = 5 Nunca cambbia
+// let contador = 0 Cambia
