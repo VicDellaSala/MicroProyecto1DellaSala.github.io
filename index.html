@@ -26,6 +26,16 @@
           <input type="text" id="jugador4" placeholder="Jugador 4" />
           <button onclick="GuardarJugadores()">Guardar Jugadores</button>
         </div>
+        <h2>Tamaño del Tablero</h2>
+        <p>Seleccione el tamaño del carton</p>
+        <div class="tamaño">
+          <button onclick="TamañoCarton3x3()">3x3</button>
+          <div id="carton3x3"></div>
+          <button onclick="TamañoCarton4x4()">4x4</button>
+          <div id="carton4x4"></div>
+          <button onclick="TamañoCarton5x5()">5x5</button>
+          <div id="carton5x5"></div>
+        </div>
         <h2>Generador de numeros</h2>
         <p>
           Seleccione "Generate" para sacar un numero, "Reset" para reiniciar
@@ -34,7 +44,7 @@
           <div class="bingo__header">
             <button onclick="GenerarNumero()">Generate</button>
             <button onclick="Reset()">Reset</button>
-            <div id="Numeroaleatoriohasta50">Numeros: 0</div>
+            <div id="Numeroaleatoriohasta50">Numeros: -</div>
             <div id="EliminarNumero"></div>
           </div>
         </div>
