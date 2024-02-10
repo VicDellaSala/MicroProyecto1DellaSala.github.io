@@ -88,10 +88,14 @@ body {
   font-weight: bold;
 }
 
-.matriz {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
+.cartones {
+  border: 1px solid black;
+}
+
+.cartonNxN {
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+  padding: 8px;
 }

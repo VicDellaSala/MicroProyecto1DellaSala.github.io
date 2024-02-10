@@ -38,16 +38,39 @@ function GuardarJugadores(){
     );  
 }
 
+let matrix_3x3 = [
+    [],
+    [],
+    [],
+]
 
 function TamañoCarton3x3(){
-    let carton = new Array(9).fill(0);
-    console.log(carton);
     let div = document.getElementById('carton3x3');
     div.innerHTML = '';
-    for (let i = 0; i < carton.length; i++) {
-        div.innerHTML += `<div>${carton[i]}</div>`;
-    }
+        let matrix_3x3 = [];
+        for (let i = 0; i < 3; i++) {
+            let row = [];
+            for (let j = 0; j < 3; j++) {
+                let randomNumber = Math.floor(Math.random() * 50);
+                row.push(randomNumber);
+            }
+            matrix_3x3.push(row);
+        }
+        console.log(matrix_3x3);
+        for (let i = 0; i < matrix_3x3.length; i++) {
+            for (let j = 0; j < matrix_3x3[i].length; j++) {
+                div.innerHTML += `<div>${matrix_3x3[i][j]}</div>`;
+            }
+        }
 }
+        
+
+    
+
+
+
+    
+
 
 function TamañoCarton4x4(){
     let carton = new Array(16).fill(0);
