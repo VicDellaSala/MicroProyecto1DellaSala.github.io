@@ -115,3 +115,19 @@ body {
   gap: 4px;
   padding: 8px;
 }
+
+.cartonesNxNNN {
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 4px;
+  padding: 8px;
+}
+
+.tamañocarton_1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: left;
+  gap: 16px;
+}

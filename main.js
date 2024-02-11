@@ -91,8 +91,33 @@ function TamañoCarton4x4_1(){
         }
 }  
  
+let matrix_5x5 = [
+    [],
+    [],
+    [],
+    [],
+    [],
+]
 
-
+function TamañoCarton5x5_1(){
+    let div = document.getElementById('carton5x5_1');
+    div.innerHTML = '';
+        let matrix_5x5 = [];
+        for (let i = 0; i < 5; i++) {
+            let row = [];
+            for (let j = 0; j < 5; j++) {
+                let randomNumber = Math.floor(Math.random() * 50);
+                row.push(randomNumber);
+            }
+            matrix_5x5.push(row);
+        }
+        console.log(matrix_5x5);
+        for (let i = 0; i < matrix_5x5.length; i++) {
+            for (let j = 0; j < matrix_5x5[i].length; j++) {
+                div.innerHTML += `<div>${matrix_5x5[i][j]}</div>`;
+            }
+        }
+}  
 
 
 
