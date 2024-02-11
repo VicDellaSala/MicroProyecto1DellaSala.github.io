@@ -99,3 +99,19 @@ body {
   gap: 4px;
   padding: 8px;
 }
+
+.TamañoCarton4x4_1 {
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4px;
+  padding: 8px;
+}
+
+.cartonesNxNN {
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4px;
+  padding: 8px;
+}

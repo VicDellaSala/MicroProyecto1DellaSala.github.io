@@ -44,8 +44,8 @@ let matrix_3x3 = [
     [],
 ]
 
-function TamañoCarton3x3(){
-    let div = document.getElementById('carton3x3');
+function TamañoCarton3x3_1(){
+    let div = document.getElementById('carton3x3_1');
     div.innerHTML = '';
         let matrix_3x3 = [];
         for (let i = 0; i < 3; i++) {
@@ -62,35 +62,37 @@ function TamañoCarton3x3(){
                 div.innerHTML += `<div>${matrix_3x3[i][j]}</div>`;
             }
         }
-}
-        
+}  
 
-    
+let matrix_4x4 = [
+    [],
+    [],
+    [],
+    [],
+]
 
-
-
-    
-
-
-function TamañoCarton4x4(){
-    let carton = new Array(16).fill(0);
-    console.log(carton);
-    let div = document.getElementById('carton4x4');
+function TamañoCarton4x4_1(){
+    let div = document.getElementById('carton4x4_1');
     div.innerHTML = '';
-    for (let i = 0; i < carton.length; i++) {
-        div.innerHTML += `<div>${carton[i]}</div>`;
-    }
-}
+        let matrix_4x4 = [];
+        for (let i = 0; i < 4; i++) {
+            let row = [];
+            for (let j = 0; j < 4; j++) {
+                let randomNumber = Math.floor(Math.random() * 50);
+                row.push(randomNumber);
+            }
+            matrix_4x4.push(row);
+        }
+        console.log(matrix_4x4);
+        for (let i = 0; i < matrix_4x4.length; i++) {
+            for (let j = 0; j < matrix_4x4[i].length; j++) {
+                div.innerHTML += `<div>${matrix_4x4[i][j]}</div>`;
+            }
+        }
+}  
+ 
 
-function TamañoCarton5x5(){
-    let carton = new Array(25).fill(0);
-    console.log(carton);
-    let div = document.getElementById('carton5x5');
-    div.innerHTML = '';
-    for (let i = 0; i < carton.length; i++) {
-        div.innerHTML += `<div>${carton[i]}</div>`;
-    }
-}
+
 
 
 
