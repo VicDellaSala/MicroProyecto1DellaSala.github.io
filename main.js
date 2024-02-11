@@ -38,17 +38,21 @@ function GuardarJugadores(){
     );  
 }
 
+let Turno25 = 25;
 const divTurno25 = document.getElementById('Turno25');
 
-function Turno() {
-    let Turno25 = 25;
-    let Turno25_m1 = Turno25 - 1;
-    let Turno25_m2 = Turno25 - 2;
+function restarUnoAlContador() {
+    Turno25 = Turno25 - 1;
+    Turno25;
     console.log(Turno25);
-    divTurno25.innerText = 'Turno: ' + Turno25_m1;
-    divTurno25.innerText = 'Turno: ' + Turno25_m2;
-}
+    divTurno25.innerText = 'Turnos: ' + Turno25;
+    }
 
+function ResetearContador() {
+    Turno25 = 25;
+    console.log(Turno25);
+    divTurno25.innerText = 'Turnos: ' + Turno25;
+}
 
 
 
