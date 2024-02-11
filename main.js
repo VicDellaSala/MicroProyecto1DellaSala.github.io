@@ -38,6 +38,21 @@ function GuardarJugadores(){
     );  
 }
 
+const divTurno25 = document.getElementById('Turno25');
+
+function Turno() {
+    let Turno25 = 25;
+    let Turno25_m1 = Turno25 - 1;
+    let Turno25_m2 = Turno25 - 2;
+    console.log(Turno25);
+    divTurno25.innerText = 'Turno: ' + Turno25_m1;
+    divTurno25.innerText = 'Turno: ' + Turno25_m2;
+}
+
+
+
+
+// Matrices para los cartones
 let matrix_3x3 = [
     [],
     [],
